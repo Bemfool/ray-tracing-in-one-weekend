@@ -1,5 +1,4 @@
 ﻿#pragma once
-
 #include <iostream>
 #include <cmath>
 #include <cstdlib>
@@ -37,16 +36,16 @@ public:
 	float e[3];
 };
 
-inline std::istream& operator>>(std::istream &is, vec3 &t);
-inline std::ostream& operator<<(std::ostream &os, const vec3 &t);
+std::istream& operator>>(std::istream &is, vec3 &t);
+std::ostream& operator<<(std::ostream &os, const vec3 &t);
 
-inline vec3 operator+(const vec3 &v1, const vec3 &v2);
-inline vec3 operator-(const vec3 &v1, const vec3 &v2);
-inline vec3 operator*(const vec3 &v1, const vec3 &v2);
-inline vec3 operator*(float t, const vec3 &v);
-inline vec3 operator*(const vec3 &v, float t);
-inline vec3 operator/(const vec3 &v1, const vec3 &v2);
-inline vec3 operator/(vec3 v, float t);
-inline float dot(const vec3 &v1, const vec3 &v2);
-inline vec3 cross(const vec3 &v1, const vec3 &v2);
-inline vec3 unit_vector(vec3 v);
+vec3 operator+(const vec3 &v1, const vec3 &v2);
+vec3 operator-(const vec3 &v1, const vec3 &v2);
+vec3 operator*(const vec3 &v1, const vec3 &v2);
+vec3 operator*(float t, const vec3 &v);
+vec3 operator*(const vec3 &v, float t);
+vec3 operator/(const vec3 &v1, const vec3 &v2);
+vec3 operator/(vec3 v, float t);
+float dot(const vec3 &v1, const vec3 &v2);
+vec3 cross(const vec3 &v1, const vec3 &v2);
+vec3 unit_vector(vec3 v);
